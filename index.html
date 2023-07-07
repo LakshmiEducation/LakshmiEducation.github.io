@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAKSHMI</title>
+    <!--FontAwesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--Icono-->
+    <link rel="icon" href="assets/icons/logo_pestania.ico">
+
+    <!--Locales-->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <!--*************************** Botón de Contacto *****************************-->
+
+    <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
+        class="btn-wsp" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!--***************************Fin Botón de Contacto*****************************-->
+
+
+
+    <!--********************************* Encabezado *********************************-->
+    <header class="container-fluid bg-dark text-white d-lg-flex">
+        <div class="container py-2">
+            <div class="d-flex align-items-center">
+
+                <div class="ms-auto d-flex align-items-center">
+
+                    <small class="ms-4">
+                        <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
+                            class="text-light" style="text-decoration: none;" target="_blank">
+                            <i class="fa fa-phone-alt me-3"></i>+52 55 1433 1060
+                        </a>
+                    </small>
+                    <div class="ms-3 d-flex text-dark ">
+                        <a class="btn btn-sm-square btn-light rounded-circle ms-2"
+                            href="https://www.facebook.com/bachilleratolakshmi" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-sm-square btn-light rounded-circle ms-2"
+                            href="https://www.instagram.com/cdhlakshmi/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--********************************* Fin Encabezado *********************************-->
+
+
+    <!--******************************** Navegación ********************************-->
+    <nav class="topnav sticky-top" id="myTopnav">
+        <div class="container-fluid ms-lg-5 ms-md-2 ms-md-2 me-3">
+            <a href="index.html">
+                <img src="assets/logo-lg.png" class="mt-1" width="110rem" height="40rem">
+            </a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="dmen">
+                <a class="mlk" href="#">Inicio</a>
+                <a class="mlk" href="#intro">Acerca de LAKSHMI</a>
+                <a class="mlk" href="#oe">Oferta Educativa</a>
+                <a class="mlk" href="#plantel">Plantel</a>
+                <a class="mlk" href="#cont">Contacto</a>
+                <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--******************************** Fin Navegación *******************************-->
+
+    <!--******************************** Banner Inicio ********************************-->
+    <div id="carouselBanner" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100 about2 bg-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-6 pt-lg-6 mx-auto" data-wow-delay="0.3s">
+                            <div class="rounded-top bnr px-4 mt-lg-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mt-md-5 mt-sm-4 mt-xsm-4" src="assets/ins2.png" id="bn_ins">
+                                </div>
+                                <a class="mt-6 py-1 px-1 btnin" style="text-decoration: none;" href="#cont">
+                                    Solicitar informes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 about bg-dark">
+                    <div class="row g-0">
+                        <div class="col-lg-5 col-md-8 col-sm-10 pt-lg-6 ms-lg-auto me-lg-5 ms-md-auto me-md-auto"
+                            data-wow-delay="0.3s">
+                            <div class="bg-bar bnr rounded-top p-4 mt-5 mx-md-4 mx-sm-4 ">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid mb-3" src="assets/logo-cp.png" id="logo_sl">
+                                </div>
+                                <h2 class="display-6 mb-3 text-center fw-medium fs-5">¡Donde el ser es primero!</h2>
+                                <a class="py-3 ms-auto lakshmi" style="text-decoration: none;" href="#cont">
+                                    Saber más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--******************************** Fin Banner Inicio ********************************-->
+
+    <!--******************************* Acerca de Lakshmi **********************************-->
+    <section class="d-flex flex-column justify-content-center align-items-center pt-5 mb-6 pb-6 text-center mx-auto"
+        id="intro">
+
+        <h1 class="p-3 fs-2 border-top border-3">
+            ¡Descubre una experiencia educativa excepcional en <span class="lakshmi">LAKSHMI</span> a nivel medio
+            superior!
+        </h1>
+
+        <div class="row p-4">
+            <div class="col-md-6 col-lg-5 mb-3 mx-auto mb-sm-0 card-equal-height">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="lakshmi">Misión</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Aportar a la sociedad actual un espacio para el crecimiento integral,
+                            desarrollando las
+                            habilidades emocionales y cognitivas del Ser Humano.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5 mx-auto mb-3 mb-sm-0 card-equal-height">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="lakshmi">Visión</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Formar Seres Humanos conscientes y empáticos con su entorno social,
+                            cultural, ambiental
+                            emocional y personal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 m-auto p-1">
+                    <div id="carousel" class="carousel carousel-dark slide mt-6" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="assets/slide1.jpg" class="d-block w-100" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="assets/slide4.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 m-auto p-2">
+                    <h1 class="p-3 fs-2 m-auto">
+                        Nuestra Historia
+                    </h1>
+
+                    <p class="p-2">
+                        El Centro de Desarrollo Humano <span class="lakshmi">LAKSHMI</span> fue fundado en el año 2022,
+                        por la Lic.
+                        Rosa Isela Lugo Ortuño quien cuenta con más de 17 años de experiencia en educación media
+                        superior,
+                        respaldada por un equipo de docentes
+                        profesionales en su área.
+                    </p>
+                    <p class="p-2">
+                        Nuestro objetivo es formar alumnos que además de desarrollar sus habilidades académicas
+                        descubran que lo más
+                        importante en ellos es el SER, siendo conscientes, empáticos, honestos, leales, respetuosos y
+                        trabajando
+                        siempre con integridad.
+                    </p>
+                    <p class="p-2">
+                        Centro de Desarrollo Humano <span class="lakshmi">LAKSHMI</span>, donde el ser es primero.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--******************************* Acerca de Lakshmi **********************************-->
+
+    <!--******************************** Video de Introducción ***********************************-->
+    <section class="w-100 border-top p-3 border-2" id="experi">
+        <div class="row w-lg-75 w-md-100 w-sm-100 mx-auto">
+            <h1 class="p-3 fs-3">
+                Experiencia <span class="lakshmi">LAKSHMI</span>
+            </h1>
+            <div class="col-lg-8 col-md-12 col-sm-12 bg-dark mx-auto d-flex justify-content-center ">
+
+                <div id="carouselVideos" class="carousel w-100 carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselVideos" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="video-container">
+                                <iframe id="videoIframe" src="https://www.youtube.com/embed/x_bZyr0w2t8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <iframe id="videoIframe" src="https://www.youtube.com/embed/KaYaoJeKK8g"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <iframe id="videoIframe" src="https://www.youtube.com/embed/E-k5AUlID1I"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVideos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--******************************** Fin Video de Introducción ***********************************-->
+
+
+    <!--**************************** Oferta Educativa  *********************************-->
+    <section id="oe" class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0 feature-row">
+                <h1 class="p-3 fs-2 border-top border-3">
+                    Oferta Educativa <span class="lakshmi">LAKSHMI</span>
+                </h1>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light mx-auto rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="assets/icons/bg.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3 lakshmi text-center">Bachillerato General</h5>
+                        <p class="mb-0">Sistema semestral que prioriza el desarrollo integral de cada uno de los
+                            estudiantes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square bg-light  mx-auto rounded-circle mb-4"
+                            style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="assets/icons/kp.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3 lakshmi text-center">Kubera Plus </h5>
+                        <p class="mb-0">Sistema integral de conocimientos que enriquece tu aprendizaje, mediante:</p>
+                        <br>
+                        <a href="#" style="text-decoration: none;" class="text-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#mkp">
+                            Saber más
+                        </a>
+                        <!--********************************** Modal Kubera *************************-->
+
+                        <div class="modal fade my-auto" id="mkp" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Kubera Plus</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div id="carouselKubera" class="carousel carousel-dark slide">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselKubera"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselKubera"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselKubera"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselKubera"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/kp/mkb1.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/kp/mkb2.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/kp/mkb3.png" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/kp/mkb4.png" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselKubera" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselKubera" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--********************************** Fin Modal Kubera *************************-->
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square  mx-auto bg-light rounded-circle mb-4"
+                            style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="assets/icons/ci.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3 lakshmi  text-center">Certificaciones Internacionales</h5>
+                        <p class="mb-0">Obtén los beneficios de una certificación internacional en idioma inglés
+                            mediante Cambridge
+                            u Oxford:</p>
+                        <br>
+                        <!--********************************** Modal Certificaciones*************************-->
+                        <a href="#" style="text-decoration: none;" class="text-info fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#mci">Beneficios</a>
+
+                        <div class="modal fade" id="mci" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Certificaciones
+                                            Internacionales</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="assets/ci/mci.png" class="d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--********************************** Modal Certificaciones*************************-->
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="feature-item border h-100 p-5">
+                        <div class="btn-square mx-auto bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                            <img class="img-fluid" src="assets/icons/hd.png" alt="Icon">
+                        </div>
+                        <h5 class="mb-3 lakshmi text-center">Habilidades Digitales</h5>
+                        <p class="mb-0">Aprende, construye y comunícate más allá de los medios tradicionales.
+                            Crea soluciones digitales y descubre un nuevo mundo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center pt-3 pb-6 text-center  m-auto">
+                <div class="col-lg-3 col-md-12 col-sm-12 mb-md-3 mb-sm-3">
+                    <img src="assets/cambri.jpg" height="70">
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 pt-md-3 pt-sm-3">
+                    <img src="assets/oxf.jpg" height="70">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--**************************** Fin Oferta Educativa  *********************************-->
+
+    <!--****************************** Ubicación *****************************************-->
+
+    <section class="w-100 border-top px-lg-3 px-md-auto px-sm-auto py-5 border-2" id="plantel">
+        <div class="row w-75 w-md-100 w-md-100 mx-auto" id="servicios-fila-1">
+            <h1 class="p-3 fs-3">
+                Estamos ubicados en:
+            </h1>
+            <div class=" col-lg-6 col-md-11 col-sm-12 m-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.0394340947255!2d-98.97320119999999!3d19.709266100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1edd779476b85%3A0xb387a90a364439ec!2sCentro%20de%20Desarrollo%20Humano%20Lakshmi!5e0!3m2!1ses-419!2smx!4v1688140518636!5m2!1ses-419!2smx"
+                    class="w-100" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-md-11 col-sm-12 m-auto">
+                <p class="px-4 fs-lg-5 fs-sm-3 fs-md-4">
+                    Alegrías No. 5, Tecámac Centro, Tecamac.
+                </p>
+                <p class="px-4 fs-lg-5 fs-sm-3 fs-md-4">
+                    C.P. 55748 Tecámac de Felipe Villanueva, Méx.
+                </p>
+                <a href="https://goo.gl/maps/ccFiqFUryP54JCNL9" class="lakshmi px-4">Ver en maps</a>
+                <p class="px-4 mt-4 fs-4 text-center lakshmi">
+                    ¡Visitanos Pronto!
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <!--****************************** Fin Ubicación *****************************************-->
+
+    <!--******************************* Footer *****************************-->
+
+    <div class="bg-footer my-0">
+        <footer class="p-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mx-auto mb-3">
+
+                    <h5>Mapa de Sitio</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#intro" class="nav-link p-0 text-muted">Acerca de</a></li>
+                        <li class="nav-item mb-2"><a href="#oe" class="nav-link p-0 text-muted">Oferta Educativa</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#plantel" class="nav-link p-0 text-muted">Plantel</a></li>
+                        <li class="nav-item mb-2"><a href="#cont" class="nav-link p-0 text-muted">Contacto</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-5 offset-md-1 mx-auto mb-3" id="cont">
+                    <form id="formContacto">
+                        <h5 class="fw-bold">Informes</h5>
+                        <p>Dejanos tus datos y nosotros nos comunicaremos contigo. </p>
+
+                        <div class="mb-3">
+                            <label for="NomCom" class="form-label">Nombre Completo</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" text-dark><i class="bi bi-person-lines-fill"></i></span>
+                                <input type="text" class="form-control" name="nomc" id="nomc">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Telefono" class="form-label">Número de Contacto</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" text-dark><i class="bi bi-telephone-fill"></i></span>
+                                <input type="text" class="form-control" name="tel" id="tel">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailc1" class="form-label">Correo Electronico</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" text-dark><i class="bi bi-envelope-fill"></i></span>
+                                <input type="email" class="form-control" name="correo" id="correo"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lrc" class="form-label">Lugar de Residencia </label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" text-dark><i class="bi bi-geo-alt-fill"></i></span>
+                                <input type="text" class="form-control" id="lugar" name="lugar">
+                            </div>
+                        </div>
+
+                        <div id="resAlert"></div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2023 <span class="lakshmi">LAKSHMI</span>, Todos los Derechos Reservados.</p>
+                <ul class="list-unstyled mx-sm-auto d-flex text-center fs-4">
+                    <li class="ms-3">
+                        <a class="link-dark" href="https://www.facebook.com/bachilleratolakshmi" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-dark" href="https://www.instagram.com/cdhlakshmi/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="fs-6 ms-4 text-center text-md-end">
+                    Diseñado Por JMedina
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--******************************* Fin Footer *****************************-->
+
+
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <!--JS Local-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 /* Generales */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: rgb(218, 218, 218);
 }
 
@@ -9,8 +9,14 @@ body {
   font-weight: bold;
 }
 
+.jr {
+  color: #333;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .btnin {
-  color: #ffe600;
+  color: #f7dd13;
   font-weight: bold;
 }
 
@@ -92,11 +98,14 @@ body {
   float: right;
   margin-right: 5rem;
 }
+.topnav .micon{
+  display: none;
+}
 
 .topnav .mlk {
   display: inline-block;
   color: #333;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .topnav .mlk:hover {
@@ -107,6 +116,7 @@ body {
 
 .topnav .icon {
   display: none;
+  color: #333;
 }
 
 .overlay {
@@ -125,10 +135,10 @@ body {
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 30%;
   width: 100%;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .overlay a {
@@ -136,12 +146,13 @@ body {
 }
 
 .overlay .mlk {
-  float: none;
+  float:none;
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
+  width: 100%;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: white;
   transition: 0.3s;
 }
@@ -154,6 +165,7 @@ body {
 
 .overlay .closebtn {
   position: absolute;
+  color: #ddd;
   top: 0.3rem;
   right: 0.8rem;
   font-size: 2.3rem;
@@ -166,6 +178,15 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 909px) {
+  #dmen {
+    margin-right: 2rem;
+  }
+  
+  .topnav .mlk {
+    font-size: .8rem;
+  }
+}
 
 @media screen and (max-width: 780px) {
 
@@ -174,18 +195,22 @@ body {
     display: none;
   }
 
-  .topnav a.icon {
-    float: right;
-    display: inline;
+  .topnav #dmen {
+    margin-right: .2rem;
   }
 
   .overlay a.icon {
+    display: none;
+  }
+  .overlay a#lglk {
     display: none;
   }
 
   .topnav .icon {
     right: 0;
     top: 1;
+    float: right;
+    display: inline;
   }
 }
 
@@ -213,7 +238,7 @@ a {
 /* ############################## Slide Principal #########################*/
 
 #carouselBanner {
-  min-height: 30rem;
+  max-height: 30rem;
 }
 
 .about {
@@ -222,7 +247,12 @@ a {
 }
 
 .about2 {
-  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../assets/insbn.png) left center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../assets/plantel.jpg) left center no-repeat;
+  background-size: cover;
+}
+
+.about3 {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../assets/plantel.jpg) left center no-repeat;
   background-size: cover;
 }
 
@@ -245,92 +275,4 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
-
-@media (max-width:1200px) {
-
-  #intro,
-  #equipo {
-    width: 90% !important;
-    margin: auto;
-  }
-
-  #local {
-    flex-wrap: wrap;
-    padding-top: 30px;
-  }
-
-  .wrapper-local {
-    width: 90%;
-    margin: auto;
-  }
-
-}
-
-/*=========================MEDIA QUERIES PANTALLA SM================================*/
-
-
-@media (max-width:768px) {
-
-  #intro,
-  #equipo {
-    width: 90% !important;
-    margin: auto;
-  }
-
-
-  #img-equipo {
-    max-height: 20rem !important;
-    width: 90%;
-  }
-
-  .wrapper-local {
-    width: 90%;
-    margin: auto;
-  }
-
-  #local {
-    flex-wrap: wrap;
-  }
-
-  .mapa img {
-    width: 100%;
-    height: auto;
-  }
-
-  #bg-contactos {
-    top: -120px;
-  }
-
-
-}
-
-/*=========================MEDIA QUERIES PANTALLA SM================================*/
-
-@media (max-width: 576px) {
-  .bnr {
-    height: 25rem;
-  }
-
-  #carouselBanner {
-    min-height: 26rem;
-    background-color: #e85045;
-  }
-
-}
-
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
-
-@media (max-width: 300px) {
-  .bnr {
-    height: 20rem;
-  }
-
-  #carouselBanner {
-    min-height: 21rem;
-    background-color: #e85045;
-  }
-
 }

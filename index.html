@@ -14,7 +14,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--Icono-->
-    <link rel="icon" href="assets/icons/logo_pestania.ico">
+    <link rel="icon" href="assets/icons/logotipo.ico">
 
     <!--Locales-->
     <link rel="stylesheet" href="css/main.css">
@@ -31,8 +31,6 @@
     </a>
 
     <!--***************************Fin Botón de Contacto*****************************-->
-
-
 
     <!--********************************* Encabezado *********************************-->
     <header class="container-fluid bg-dark text-white d-lg-flex">
@@ -65,18 +63,21 @@
 
 
     <!--******************************** Navegación ********************************-->
-    <nav class="topnav sticky-top" id="myTopnav">
+    <nav class="topnav sticky-top fixed-top" id="myTopnav">
         <div class="container-fluid ms-lg-5 ms-md-2 ms-md-2 me-3">
-            <a href="index.html">
-                <img src="assets/logo-lg.png" class="mt-1" width="110rem" height="40rem">
+            <a id="lglk" href="index.html">
+                <img src="assets/logo-lg.png" class="mt-1" width="125rem" height="40rem">
             </a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div id="dmen">
-                <a class="mlk" href="#">Inicio</a>
-                <a class="mlk" href="#intro">Acerca de LAKSHMI</a>
-                <a class="mlk" href="#oe">Oferta Educativa</a>
-                <a class="mlk" href="#plantel">Plantel</a>
-                <a class="mlk" href="#cont">Contacto</a>
+                <a class="mlk" href="#" onclick="closeNav()"> <i class="bi bi-house-door-fill micon"></i> Inicio</a>
+                <a class="mlk" href="#intro" onclick="closeNav()"><i class="bi bi-person-lines-fill micon"></i> Acerca
+                    de LAKSHMI</a>
+                <a class="mlk" href="#oe" onclick="closeNav()"><i class="bi bi-patch-exclamation-fill micon"></i> Oferta
+                    Educativa</a>
+                <a class="mlk" href="#plantel" onclick="closeNav()"><i class="bi bi-geo-alt-fill micon"></i> Plantel</a>
+                <a class="mlk" href="#cont" onclick="closeNav()"><i class="bi bi-input-cursor-text micon"></i>
+                    Contacto</a>
                 <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -85,8 +86,9 @@
     </nav>
     <!--******************************** Fin Navegación *******************************-->
 
+
     <!--******************************** Banner Inicio ********************************-->
-    <div id="carouselBanner" class="carousel carousel-dark slide">
+    <div id="carouselBanner" class="carousel carousel-dark bg-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -96,25 +98,22 @@
             <div class="carousel-item active">
                 <div class="d-block w-100 about2 bg-dark">
                     <div class="row g-0">
-                        <div class="col-lg-6 pt-lg-6 mx-auto" data-wow-delay="0.3s">
-                            <div class="rounded-top bnr px-4 mt-lg-5">
+                        <div class="col-lg-6 col-md-10 col-sm-12 pt-lg-6 pt-md-4 pt-sm-2 mx-auto" data-wow-delay="0.3s">
+                            <div class="rounded-top px-4 mt-lg-4">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <img class="img-fluid mt-md-5 mt-sm-4 mt-xsm-4" src="assets/ins2.png" id="bn_ins">
+                                    <img class="img-fluid" src="assets/ins.png" id="bn_ins">
                                 </div>
-                                <a class="mt-6 py-1 px-1 btnin" style="text-decoration: none;" href="#cont">
-                                    Solicitar informes
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="d-block w-100 about bg-dark">
+                <div class="d-block w-100 h-100 about bg-dark">
                     <div class="row g-0">
-                        <div class="col-lg-5 col-md-8 col-sm-10 pt-lg-6 ms-lg-auto me-lg-5 ms-md-auto me-md-auto"
+                        <div class="col-lg-5 col-md-6 col-sm-10 pt-lg-6 pt-md-5 ms-lg-auto ms-md-auto ms-sm-auto me-lg-5 me-md-5 me-sm-auto"
                             data-wow-delay="0.3s">
-                            <div class="bg-bar bnr rounded-top p-4 mt-5 mx-md-4 mx-sm-4 ">
+                            <div class="bg-bar rounded-top p-4 mt-lg-5 mt-md-3 mt-sm-2">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img class="img-fluid mb-3" src="assets/logo-cp.png" id="logo_sl">
                                 </div>
@@ -129,14 +128,6 @@
 
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     <!--******************************** Fin Banner Inicio ********************************-->
 
@@ -149,28 +140,41 @@
             superior!
         </h1>
 
-        <div class="row p-4">
-            <div class="col-md-6 col-lg-5 mb-3 mx-auto mb-sm-0 card-equal-height">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="lakshmi">Misión</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Aportar a la sociedad actual un espacio para el crecimiento integral,
-                            desarrollando las
-                            habilidades emocionales y cognitivas del Ser Humano.</p>
+        <div class="row g-2 px-1 px-md-auto w-100 pt-2">
+            <div class="col-lg-5 col-md-10 col-sm-12 mx-auto">
+                <div class="card mb-3 mt-1 mx-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4 ">
+                            <img src="assets/mision.png" class="img-thumbnail p-4 rounded-start" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title lakshmi">Misión</h5>
+                                <p class="card-text">
+                                    Aportar a la sociedad actual un espacio para el crecimiento integral, desarrollando
+                                    las
+                                    habilidades emocionales y cognitivas del Ser Humano.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 mx-auto mb-3 mb-sm-0 card-equal-height">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="lakshmi">Visión</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Formar Seres Humanos conscientes y empáticos con su entorno social,
-                            cultural, ambiental
-                            emocional y personal.</p>
+            <div class="col-lg-5 col-md-10 col-sm-12 mx-auto">
+                <div class="card mb-3 mt-1 mx-auto" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="assets/vision.png" class="img-thumbnail p-4 rounded-start" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title lakshmi">Visión</h5>
+                                <p class="card-text">
+                                    Formar Seres Humanos conscientes y empáticos con su entorno social,
+                                    cultural, ambiental emocional y personal.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,7 +315,7 @@
                 </h1>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light mx-auto rounded-circle mb-4" style="width: 64px; height: 64px;">
+                        <div class="mx-auto  mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="assets/icons/bg.png" alt="Icon">
                         </div>
                         <h5 class="mb-3 lakshmi text-center">Bachillerato General</h5>
@@ -321,14 +325,13 @@
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="feature-item border h-100 p-5">
-                        <div class="btn-square bg-light  mx-auto rounded-circle mb-4"
-                            style="width: 64px; height: 64px;">
+                        <div class="mx-auto mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="assets/icons/kp.png" alt="Icon">
                         </div>
                         <h5 class="mb-3 lakshmi text-center">Kubera Plus </h5>
                         <p class="mb-0">Sistema integral de conocimientos que enriquece tu aprendizaje, mediante:</p>
                         <br>
-                        <a href="#" style="text-decoration: none;" class="text-info fw-bold" data-bs-toggle="modal"
+                        <a href="#" style="text-decoration: none;" class="lakshmi fw-bold" data-bs-toggle="modal"
                             data-bs-target="#mkp">
                             Saber más
                         </a>
@@ -394,8 +397,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="feature-item border h-100 p-5">
-                        <div class="btn-square  mx-auto bg-light rounded-circle mb-4"
-                            style="width: 64px; height: 64px;">
+                        <div class="mx-auto mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="assets/icons/ci.png" alt="Icon">
                         </div>
                         <h5 class="mb-3 lakshmi  text-center">Certificaciones Internacionales</h5>
@@ -404,7 +406,7 @@
                             u Oxford:</p>
                         <br>
                         <!--********************************** Modal Certificaciones*************************-->
-                        <a href="#" style="text-decoration: none;" class="text-info fw-bold" data-bs-toggle="modal"
+                        <a href="#" style="text-decoration: none;" class="lakshmi fw-bold" data-bs-toggle="modal"
                             data-bs-target="#mci">Beneficios</a>
 
                         <div class="modal fade" id="mci" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -429,7 +431,7 @@
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="feature-item border h-100 p-5">
-                        <div class="btn-square mx-auto bg-light rounded-circle mb-4" style="width: 64px; height: 64px;">
+                        <div class="mx-auto mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="assets/icons/hd.png" alt="Icon">
                         </div>
                         <h5 class="mb-3 lakshmi text-center">Habilidades Digitales</h5>
@@ -440,11 +442,11 @@
             </div>
 
             <div class="row d-flex justify-content-center align-items-center pt-3 pb-6 text-center  m-auto">
-                <div class="col-lg-3 col-md-12 col-sm-12 mb-md-3 mb-sm-3">
-                    <img src="assets/cambri.jpg" height="70">
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-md-3 mb-sm-3">
+                    <img src="assets/cambri.png" height="80">
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 pt-md-3 pt-sm-3">
-                    <img src="assets/oxf.jpg" height="70">
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-md-3 mb-sm-3">
+                    <img src="assets/oxf.png" height="70">
                 </div>
 
 
@@ -455,8 +457,8 @@
 
     <!--****************************** Ubicación *****************************************-->
 
-    <section class="w-100 border-top px-lg-3 px-md-auto px-sm-auto py-5 border-2" id="plantel">
-        <div class="row w-75 w-md-100 w-md-100 mx-auto" id="servicios-fila-1">
+    <section class="w-100 border-top px-lg-3 px-md-auto about3 px-sm-auto py-5 border-2" id="plantel">
+        <div class="row w-75 w-md-100 w-md-100 mx-auto text-light" id="servicios-fila-1">
             <h1 class="p-3 fs-3">
                 Estamos ubicados en:
             </h1>
@@ -473,8 +475,8 @@
                 <p class="px-4 fs-lg-5 fs-sm-3 fs-md-4">
                     C.P. 55748 Tecámac de Felipe Villanueva, Méx.
                 </p>
-                <a href="https://goo.gl/maps/ccFiqFUryP54JCNL9" class="lakshmi px-4">Ver en maps</a>
-                <p class="px-4 mt-4 fs-4 text-center lakshmi">
+                <a href="https://goo.gl/maps/ccFiqFUryP54JCNL9" class="btnin px-4">Ver en maps</a>
+                <p class="px-4 mt-4 fs-4 text-center btnin">
                     ¡Visitanos Pronto!
                 </p>
             </div>
@@ -560,7 +562,7 @@
                     </li>
 
                 </ul>
-                <div class="fs-6 ms-4 text-center text-md-end">
+                <div class="fs-6 ms-4 jr text-center text-md-end">
                     Diseñado Por JMedina
                 </div>
             </div>

@@ -15,10 +15,12 @@ function myFunction() {
 function closeNav() {
   var x = document.getElementById("myTopnav");
   var y = document.getElementById("dmen");
+  var i = document.getElementById("icon");
   if (x.className === "overlay") {
     x.className = "topnav";
     y.className = " "
     document.getElementById("myTopnav").style.width = "0%";
+    document.getElementById("myTopnav").style.width = "100%";
   }
 }
 

@@ -98,7 +98,8 @@ body {
   float: right;
   margin-right: 5rem;
 }
-.topnav .micon{
+
+.topnav .micon {
   display: none;
 }
 
@@ -146,7 +147,7 @@ body {
 }
 
 .overlay .mlk {
-  float:none;
+  float: none;
   display: block;
   text-align: left;
   padding: 1rem;
@@ -178,11 +179,12 @@ body {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 909px) {
   #dmen {
     margin-right: 2rem;
   }
-  
+
   .topnav .mlk {
     font-size: .8rem;
   }
@@ -202,6 +204,7 @@ body {
   .overlay a.icon {
     display: none;
   }
+
   .overlay a#lglk {
     display: none;
   }
@@ -227,7 +230,9 @@ a {
 }
 
 .bg-footer {
-  background-color: #f7dd13;
+  /*background-color: #f7dd13;*/
+  background: rgb(51, 51, 51);
+  background: linear-gradient(311deg, rgba(51, 51, 51, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .btn-lak:hover {
@@ -257,9 +262,27 @@ a {
 }
 
 #logo_sl {
-  max-height: 18rem !important;
+  max-height: 16rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+#bn_ins {
+  max-height: 27.2rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media screen and (max-width: 470px) {
+  #bn_ins {
+    max-width: 21.5rem !important;
+    max-height: 26.2rem !important;
+  }
+
+  #logo_sl {
+    max-height: 13.5rem !important;
+  }
+
 }
 
 /* ==========================Slide Videos===============================*/

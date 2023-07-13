@@ -9,16 +9,18 @@ body {
   font-weight: bold;
 }
 
+.insta {
+  background: -webkit-linear-gradient(left top, #405de6, #833ab4);
+  background: linear-gradient(to bottom right, #c13584, #e1306c);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
 .jr {
-  color: #333;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }
 
-.btnin {
-  color: #f7dd13;
-  font-weight: bold;
-}
 
 /* Botón de Contacto*/
 .btn-wsp {
@@ -230,9 +232,7 @@ a {
 }
 
 .bg-footer {
-  /*background-color: #f7dd13;*/
-  background: rgb(51, 51, 51);
-  background: linear-gradient(311deg, rgba(51, 51, 51, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background-color: #f7dd13;
 }
 
 .btn-lak:hover {
@@ -258,6 +258,10 @@ a {
 
 .about3 {
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../assets/plantel.jpg) left center no-repeat;
+  background-size: cover;
+}
+.about4 {
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../assets/bgForm.jpg) left center no-repeat;
   background-size: cover;
 }
 

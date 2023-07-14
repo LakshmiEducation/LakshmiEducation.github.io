@@ -35,27 +35,18 @@
     <!--********************************* Encabezado *********************************-->
     <header class="container-fluid bg-dark text-light d-lg-flex">
         <div class="container py-2">
-            <div class="d-flex align-items-center">
-
-                <div class="ms-auto d-flex align-items-center">
-
-                    <small class="ms-4">
-                        <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
-                            class="text-light" style="text-decoration: none;" target="_blank">
-                            <i class="fa fa-phone-alt me-3"></i>+52 55 1433 1060
-                        </a>
-                    </small>
-                    <div class="ms-3 d-flex text-dark ">
-                        <a class="btn btn-sm-square btn-light rounded-circle ms-2"
-                            href="https://www.facebook.com/bachilleratolakshmi" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-sm-square btn-light rounded-circle ms-2"
-                            href="https://www.instagram.com/cdhlakshmi/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="ms-lg-auto text-lg-end text-center">
+                <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
+                    class="text-light me-3" style="text-decoration: none;" target="_blank">
+                    <i class="fa fa-phone-alt me-3"></i>+52 55 1433 1060
+                </a>
+                <a class="link-info text-info me-3 fs-4" href="https://www.facebook.com/bachilleratolakshmi"
+                    target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a class="link-light insta me-3 fs-4" href="https://www.instagram.com/cdhlakshmi/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -186,7 +177,7 @@
                     <div id="carousel" class="carousel carousel-dark slide mt-6" data-bs-ride="carousel">
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="assets/slide1.jpg" class="d-block w-100" alt="">
+                                <img src="assets/slide3.jpg" class="d-block w-100" alt="">
                             </div>
 
                             <div class="carousel-item" data-bs-interval="3000">
@@ -194,11 +185,11 @@
                             </div>
 
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/slide3.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/slide5.jpg" class="d-block w-100" alt="...">
                             </div>
 
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img src="assets/slide4.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/slide6.jpg" class="d-block w-100" alt="...">
                             </div>
 
                         </div>
@@ -318,7 +309,7 @@
                         <div class="mx-auto  mb-4" style="width: 64px; height: 64px;">
                             <img class="img-fluid" src="assets/icons/bg.png" alt="Icon">
                         </div>
-                        <h5 class="mb-3 lakshmi text-center">Bachillerato General</h5>
+                        <h5 class="mb-3 lakshmi text-center">Bachillerato</h5>
                         <p class="mb-0">Sistema semestral que prioriza el desarrollo integral de cada uno de los
                             estudiantes.</p>
                     </div>
@@ -485,105 +476,113 @@
         </div>
     </section>
     <!--****************************** Fin Ubicación *****************************************-->
- <!-- *********************************** Fprmulario ************************************-->
- <Section class="bg-light my-4 py-5" id="cont">
-    <div class="card w-75 mx-auto">
-        <div class="row g-0">
-            <div class="col-md-5 rounded-start about4">
 
-            </div>
-            <div class="col-md-7">
-                <div class="card-body">
-                    <h5 class="card-title">Contactanos</h5>
-                    <p class="card-text">
-                        Dejanos tus datos y nosotros nos comunicaremos contigo.
-                    </p>
-                    <form id="formContacto">
-                        <div class="mb-3">
-                            <label for="NomCom" class="form-label">Nombre Completo</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" text-dark><i
-                                        class="bi bi-person-lines-fill"></i></span>
-                                <input type="text" class="form-control" onchange="valName(this);" name="nomc" id="nomc">
-                            </div>
-                            <div id="nomAlert"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="Telefono" class="form-label">Número de Contacto</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" text-dark><i class="bi bi-telephone-fill"></i></span>
-                                <input type="text" class="form-control" name="tel" id="tel">
-                            </div>
-                            <div id="numAlert"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailc1" class="form-label">Correo Electronico</label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" text-dark><i class="bi bi-envelope-fill"></i></span>
-                                <input type="email" class="form-control" name="correo" id="correo"
-                                    aria-describedby="emailHelp">
-                            </div>
-                            <div id="correoAlert"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="lrc" class="form-label">Lugar de Residencia </label>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" text-dark><i class="bi bi-geo-alt-fill"></i></span>
-                                <input type="text" class="form-control" id="lugar" name="lugar">
-                            </div>
-                        </div>
+    <!-- *********************************** Formulario ************************************-->
+    <Section class="bg-light my-4 py-5" id="cont">
+        <div class="card w-75 mx-auto">
+            <div class="row g-0">
+                <div class="col-md-5 rounded-start about4">
 
-                        <div id="resAlert"></div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h5 class="card-title lakshmi">Contactanos</h5>
+                        <p class="card-text">
+                            Dejanos tus datos y nosotros nos comunicaremos contigo.
+                        </p>
+                        <form id="formContacto">
+                            <div class="mb-3">
+                                <label for="NomCom" class="form-label">Nombre Completo</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" text-dark><i
+                                            class="bi bi-person-lines-fill"></i></span>
+                                    <input type="text" class="form-control" onchange="valName(this);" name="nomc"
+                                        id="nomc">
+                                </div>
+                                <div id="nomAlert"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Telefono" class="form-label">Número de Contacto</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" text-dark><i class="bi bi-telephone-fill"></i></span>
+                                    <input type="text" class="form-control" name="tel" id="tel">
+                                </div>
+                                <div id="numAlert"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailc1" class="form-label">Correo Electronico</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" text-dark><i class="bi bi-envelope-fill"></i></span>
+                                    <input type="email" class="form-control" name="correo" id="correo"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div id="correoAlert"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lrc" class="form-label">Lugar de Residencia </label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" text-dark><i class="bi bi-geo-alt-fill"></i></span>
+                                    <input type="text" class="form-control" id="lugar" name="lugar">
+                                </div>
+                            </div>
+
+                            <div id="resAlert"></div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                        <p class="card-text laktext fs-6 mt-2">
+                            *También puedes comunicarte directo al número +52 55 1433 1060 para solicitar informes o hacer click en el botón de WhatsApp, en donde un asesor te atenderá. 
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</Section>
-<!--******************************** Fin Formulario ***********************************-->
+    </Section>
+    <!--******************************** Fin Formulario ***********************************-->
 
- <!--******************************* Footer *****************************-->
- <footer class="pt-4 pb-0 px-2 bg-dark my-0">
-    <div class="row w-lg-75 w-100 m-0 mx-auto justify-content-center align-items-center">
-        <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
-            <p class="lakshmi fs-lg-5 text-lg-end text-center">Siguenos en nuestras redes sociales:</p>
+    <!--******************************* Footer *****************************-->
+    <footer class="pt-4 pb-0 px-2 bg-dark my-0">
+        <div class="row w-lg-75 w-100 m-0 mx-auto justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <p class="lakshmi fs-lg-5 text-lg-end text-center">Siguenos en nuestras redes sociales:</p>
+            </div>
+            <div class="col-lg-5 my-auto col-md-12 col-sm-12 mx-auto">
+                <ul class="list-unstyled d-flex fs-2">
+                    <li class="mx-auto">
+                        <a class="link-dark text-info" href="https://www.facebook.com/bachilleratolakshmi"
+                            target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="mx-auto">
+                        <a class="link-dark insta" href="https://www.instagram.com/cdhlakshmi/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="mx-auto">
+                        <a class="link-dark text-danger" href="https://www.youtube.com/@CDHLakshmi" target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-5 my-auto col-md-12 col-sm-12 mx-auto">
-            <ul class="list-unstyled d-flex fs-2">
-                <li class="mx-auto">
-                    <a class="link-dark text-info" href="https://www.facebook.com/bachilleratolakshmi" target="_blank">
-                        <i class="bi bi-facebook"></i> 
-                    </a>
-                </li>
-                <li class="mx-auto">
-                    <a class="link-dark insta" href="https://www.instagram.com/cdhlakshmi/" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li class="mx-auto">
-                    <a class="link-dark text-danger" href="https://www.youtube.com/@CDHLakshmi" target="_blank">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                </li>
 
-            </ul>
+        <div class="d-flex text-light row flex-sm-row py-2 my-1 border-top border-5 border-warning">
+            <p
+                class="col-lg-5 col-md-10 col-sm-12 fs-6 me-lg-auto mx-md-auto mx-sm-auto ms-lg-4 text-lg-star text-center">
+                &copy; 2023 <span class="lakshmi">LAKSHMI</span>, Todos los Derechos Reservados.
+            </p>
+
+            <div
+                class="col-lg-5 col-md-10 col-sm-12 fs-6 ms-lg-auto mx-md-auto mx-sm-auto jr me-lg-4 text-lg-end text-center">
+                Diseñado Por JMedina
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <div class="d-flex text-light row flex-sm-row py-2 my-1 border-top border-5 border-warning">
-        <p class="col-lg-5 col-md-10 col-sm-12 fs-6 me-lg-auto mx-md-auto mx-sm-auto ms-lg-4 text-lg-star text-center">
-            &copy; 2023 <span class="lakshmi">LAKSHMI</span>, Todos los Derechos Reservados.
-        </p>
-        
-        <div class="col-lg-5 col-md-10 col-sm-12 fs-6 ms-lg-auto mx-md-auto mx-sm-auto jr me-lg-4 text-lg-end text-center">
-            Diseñado Por JMedina
-        </div>
-    </div>
-</footer>
-
-<!--******************************* Fin Footer *****************************-->
+    <!--******************************* Fin Footer *****************************-->
 
 
     <!--JS Bootstrap-->

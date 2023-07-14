@@ -9,6 +9,10 @@ body {
   font-weight: bold;
 }
 
+.laktext {
+  color: #e85045;
+}
+
 .insta {
   background: -webkit-linear-gradient(left top, #405de6, #833ab4);
   background: linear-gradient(to bottom right, #c13584, #e1306c);

@@ -25,7 +25,7 @@
 
     <!--*************************** Botón de Contacto *****************************-->
 
-    <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
+    <a href="https://api.whatsapp.com/send/?phone=%2B525534034621&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n?&type=phone_number&app_absent=0"
         class="btn-wsp" target="_blank">
         <i class="bi bi-whatsapp"></i>
     </a>
@@ -36,9 +36,9 @@
     <header class="container-fluid bg-dark text-light d-lg-flex">
         <div class="container py-2">
             <div class="ms-lg-auto text-lg-end text-center">
-                <a href="https://api.whatsapp.com/send/?phone=%2B525514331060&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n%20para%20ingresar%20a%20la%20preparatoria?&type=phone_number&app_absent=0"
+                <a href="https://api.whatsapp.com/send/?phone=%2B525534034621&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n?&type=phone_number&app_absent=0"
                     class="text-light me-3" style="text-decoration: none;" target="_blank">
-                    <i class="fa fa-phone-alt me-3"></i>+52 55 1433 1060
+                    <i class="fa fa-phone-alt me-3"></i>+52 55 3403 4621
                 </a>
                 <a class="link-info text-info me-3 fs-4" href="https://www.facebook.com/bachilleratolakshmi"
                     target="_blank">
@@ -61,14 +61,17 @@
             </a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div id="dmen">
-                <a class="mlk" href="#" onclick="closeNav()"> <i class="bi bi-house-door-fill micon"></i> Inicio</a>
-                <a class="mlk" href="#intro" onclick="closeNav()"><i class="bi bi-person-lines-fill micon"></i> Acerca
+                <a class="mlk" href="#" onclick="closeNav()"><i class="bi bi-house"></i> Inicio</a>
+                <a class="mlk" href="#intro" onclick="closeNav()"><i class="bi bi-people"></i> Acerca
                     de LAKSHMI</a>
-                <a class="mlk" href="#oe" onclick="closeNav()"><i class="bi bi-patch-exclamation-fill micon"></i> Oferta
+                <a class="mlk" href="#oe" onclick="closeNav()"><i class="bi bi-patch-check"></i> Oferta
                     Educativa</a>
-                <a class="mlk" href="#plantel" onclick="closeNav()"><i class="bi bi-geo-alt-fill micon"></i> Plantel</a>
-                <a class="mlk" href="#cont" onclick="closeNav()"><i class="bi bi-input-cursor-text micon"></i>
-                    Contacto</a>
+                    <a href="#" class="mlk" onclick="closeNav()" data-bs-toggle="modal" data-bs-target="#mcomi">
+                        <i class="bi bi-bookmark-dash"></i> Comipems</a>
+                <a class="mlk" href="#plantel" onclick="closeNav()">
+                    <i class="bi bi-geo-alt"></i> Plantel</a>
+                <a class="mlk" href="#cont" onclick="closeNav()">
+                    <i class="bi bi-telephone-forward"></i> Contacto</a>
                 <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -84,23 +87,52 @@
             <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="d-block w-100 about2 bg-dark">
+                <div class="d-block w-100 aboutC">
                     <div class="row g-0">
                         <div class="col-lg-6 col-md-10 col-sm-12 pt-lg-6 pt-md-4 pt-sm-2 mx-auto" data-wow-delay="0.3s">
                             <div class="rounded-top px-4 mt-lg-4">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <img src="assets/ins.png" id="bn_ins">
+                                    <a href="#" style="text-decoration: none;" class="lakshmi fw-bold"
+                                        data-bs-toggle="modal" data-bs-target="#mcomi">
+                                        <img src="assets/comip.png" id="bn_ins">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--********************************** Modal Comipems*************************-->
+
+
+            <div class="modal fade" id="mcomi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">CURSO
+                                COMIPEMS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="assets/fcomi.png" class="d-block w-75 mx-auto">
+                            <a type="button" class="btn btn-outline-success mt-1 mx-auto"
+                                href="https://api.whatsapp.com/send/?phone=%2B525534034621&text=Hola%20%C2%BFMe%20puedes%20brindar%20informaci%C3%B3n?&type=phone_number&app_absent=0"
+                                target="_blank">
+                                INFORMES
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--********************************** Modal comipems*************************-->
+
             <div class="carousel-item">
-                <div class="d-block w-100 h-100 about bg-dark">
+                <div class="d-block w-100 h-100 about ">
                     <div class="row g-0">
                         <div class="col-lg-5 col-md-6 col-sm-10 pt-lg-6 pt-md-5 ms-lg-auto ms-md-auto ms-sm-auto me-lg-5 me-md-5 me-sm-auto"
                             data-wow-delay="0.3s">
@@ -116,7 +148,19 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100 about2 ">
+                    <div class="row g-0">
+                        <div class="col-lg-6 col-md-10 col-sm-12 pt-lg-6 pt-md-4 pt-sm-2 mx-auto" data-wow-delay="0.3s">
+                            <div class="rounded-top px-4 mt-lg-4">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="assets/ins.png" id="bn_ins">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -310,7 +354,8 @@
                             <img class="img-fluid" src="assets/icons/bg.png" alt="Icon">
                         </div>
                         <h5 class="mb-3 lakshmi text-center">Bachillerato</h5>
-                        <p class="mb-0">Sistema semestral que prioriza el desarrollo integral de cada uno de los
+                        <p class="mb-0">Sistema semestral y cuatrimestral que prioriza el desarrollo integral de cada
+                            uno de los
                             estudiantes.</p>
                     </div>
                 </div>
@@ -449,17 +494,18 @@
     <!--****************************** Ubicación *****************************************-->
 
     <section class="w-100 border-top px-lg-3 px-md-auto about3 px-sm-auto py-5 border-2" id="plantel">
-        <div class="row w-lg-75 w-md-100 w-md-100 mx-auto text-light" id="servicios-fila-1">
-            <h1 class="p-3 fs-3">
-                Estamos ubicados en:
-            </h1>
-            <div class=" col-lg-6 col-md-11 col-sm-12 m-auto">
+        <div class="row w-lg-75 w-md-100 mx-auto text-light align-self-center" id="servicios-fila-1">
+
+            <div class=" col-lg-5 col-md-10 col-sm-11 m-auto">
+                <h1 class="p-3 fs-3">
+                    Estamos ubicados en:
+                </h1>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.0394340947255!2d-98.97320119999999!3d19.709266100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1edd779476b85%3A0xb387a90a364439ec!2sCentro%20de%20Desarrollo%20Humano%20Lakshmi!5e0!3m2!1ses-419!2smx!4v1688140518636!5m2!1ses-419!2smx"
                     class="w-100 rounded" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-lg-6 col-md-11 col-sm-12 m-auto">
+            <div class="col-lg-4 col-md-10 col-sm-11 m-auto">
                 <p class="px-4 fs-lg-5 fs-sm-3 fs-md-4">
                     Alegrías No. 5, Tecámac Centro, Tecamac.
                 </p>
@@ -530,7 +576,8 @@
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                         <p class="card-text laktext fs-6 mt-2">
-                            *También puedes comunicarte directo al número +52 55 1433 1060 para solicitar informes o hacer click en el botón de WhatsApp, en donde un asesor te atenderá. 
+                            *También puedes comunicarte directo al número +52 55 3403 4621 para solicitar informes o
+                            hacer click en el botón de WhatsApp, en donde un asesor te atenderá.
                         </p>
                     </div>
                 </div>
